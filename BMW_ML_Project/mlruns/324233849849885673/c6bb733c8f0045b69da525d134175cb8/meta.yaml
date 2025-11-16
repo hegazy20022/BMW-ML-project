@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/MF/Downloads/BMW_ML_Project/mlruns/324233849849885673/c6bb733c8f0045b69da525d134175cb8/artifacts
+end_time: 1762039782248
+entry_point_name: ''
+experiment_id: '324233849849885673'
+lifecycle_stage: active
+run_id: c6bb733c8f0045b69da525d134175cb8
+run_name: dazzling-wren-452
+run_uuid: c6bb733c8f0045b69da525d134175cb8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762039781859
+status: 4
+tags: []
+user_id: MF

@@ -1,0 +1,8 @@
+target_col: Sales_Classification
+test_size: 0.2
+random_state: 42
+model:
+  var_smoothing: 1e-8
+features:
+  scaled_cols: ['Mileage_KM','Price_USD','Sales_Volume']
+  categorical_cols: ['Fuel_Type','Color','Region','Model','Transmission']

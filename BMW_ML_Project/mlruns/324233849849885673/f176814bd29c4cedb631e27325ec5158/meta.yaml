@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/MF/Downloads/BMW_ML_Project/mlruns/324233849849885673/f176814bd29c4cedb631e27325ec5158/artifacts
+end_time: 1762040190043
+entry_point_name: ''
+experiment_id: '324233849849885673'
+lifecycle_stage: active
+run_id: f176814bd29c4cedb631e27325ec5158
+run_name: carefree-steed-908
+run_uuid: f176814bd29c4cedb631e27325ec5158
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762040164217
+status: 3
+tags: []
+user_id: MF

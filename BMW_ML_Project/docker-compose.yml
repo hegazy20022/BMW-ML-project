@@ -1,0 +1,29 @@
+services:
+  api:
+    build: .
+    environment:
+      - MODEL_PATH=artifacts/nb_pipeline.joblib
+      - MODEL_URI=${MODEL_URI:-}
+      - MLFLOW_TRACKING_URI=${MLFLOW_TRACKING_URI:-file:./mlruns}
+      - ALLOW_ORIGINS=*
+      - RATE_LIMIT=100/minute
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+    depends_on:
+      - mlflow
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.14.1
+    command: >
+      mlflow server
+      --host 0.0.0.0
+      --port 5000
+      --backend-store-uri sqlite:///mlflow.db
+      --default-artifact-root /mlflow_artifacts
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlflow_artifacts
+      - ./mlflow.db:/mlflow.db
