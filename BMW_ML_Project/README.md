@@ -5,7 +5,7 @@ Includes: API (FastAPI), Streamlit UI, MLflow tracking, Docker support, visual a
 ###  Model Performance (Visualizations)
 
 ### Confusion Matrix
-![Confusion Matrix](assets/confusion_matrix.png)
+![confusion matrix](assets/confusion_matrix.png)
 
 ### ROC Curve
 ![ROC Curve](assets/roc_curve.png)
